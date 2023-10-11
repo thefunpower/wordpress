@@ -21,8 +21,8 @@ if(!$g_wp_installed){
 		/**
 		* 启动数据库连接
 		*/
-		include __DIR__.'/vendor/thefunpower/db_medoo/inc/db/boot.php'; 
-		include __DIR__.'/vendor/thefunpower/core/helper.php';  
+		include __DIR__.'/../db_medoo/inc/db/boot.php'; 
+		include __DIR__.'/../core/helper.php';  
 		add_action( 'init', "express_install");   
 		include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
 
