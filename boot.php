@@ -22,8 +22,7 @@ if(!function_exists('g_init_wordpress')){
 			/**
 			* 启动数据库连接
 			*/
-			include __DIR__.'/../db_medoo/inc/db/boot.php'; 
-			include __DIR__.'/../core/helper.php';   
+			include __DIR__.'/../db_medoo/inc/db/boot.php';  
 			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );  
 		} 
 	}

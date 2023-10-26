@@ -14,7 +14,7 @@
         "thefunpower/helper": "^2",
         "thefunpower/db_medoo": "^2", 
         "thefunpower/vue": "^2",
-        "thefunpower/core": "^2",
+        "thefunpower/think": "^2",
         "phpoffice/phpspreadsheet": "^1"
     },
     "autoload": { 
