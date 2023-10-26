@@ -20,3 +20,31 @@ function g_init_wordpress(){
 	} 
 }  
 
+ 
+function get_req_post($key = "")
+{
+    $input = get_input();
+    $data  = $_POST;
+    if ($key) {
+        $val = $data[$key];
+        if ($input && is_array($input) && !$val) {
+            $val = $input[$key];
+        }
+        return $val;
+    } else {
+        return $data ?: $input;
+    }
+} 
+
+function g($key = null)
+{
+    $val = get_req_post($key);
+    if (!$val) {
+        $val = $key?$_GET[$key]:$_GET;
+    }
+    global $config;
+    if($config['xss_clean'] == true){
+        $val = xss_clean($val);
+    }
+    return $val;
+} 
