@@ -6,13 +6,7 @@
 function g_init_wordpress(){ 
 	global $g_wp_installed; 
 	if(!$g_wp_installed){
-		$g_wp_installed = true; 
-		/**
-		* 数据库连接
-		*/
-		if(defined('DB_NAME')){
-			g_init_wordpress(); 
-		}  
+		$g_wp_installed = true;  
 		$medoo_db_config['db_name'] = DB_NAME; 
 		$medoo_db_config['db_host'] = DB_HOST;
 		$medoo_db_config['db_user'] = DB_USER;
