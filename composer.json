@@ -11,10 +11,10 @@
         }
     ],
     "require": {  
-        "thefunpower/helper": "^2",
-        "thefunpower/db_medoo": "^2", 
-        "thefunpower/vue": "^2",
-        "thefunpower/think": "^2",
+        "thefunpower/helper": "dev-main",
+        "thefunpower/db_medoo": "dev-main", 
+        "thefunpower/vue": "dev-main",
+        "thefunpower/think": "dev-main",
         "phpoffice/phpspreadsheet": "^1"
     },
     "autoload": { 
